@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import SDWebImage
+import KWebImage
 protocol CinemaCellDelegate:AnyObject {
     func loadImageCompleted(index:Int)
 }
@@ -47,37 +47,9 @@ class CinemaCell: UITableViewCell {
         self.lblTitle.text = data.name
         self.lblSubtitle.text = data.price
         guard let url = URL(string: data.filmUrl ?? "" ) else { return  }
-        let session = URLSession.shared
-        let task = session.dataTask(with: url) { [weak self] data, _, _ in
-            guard let weakSelf = self, let data = data  else {return}
-            let dispatchWorkItem = DispatchWorkItem{
-                print("work item start")
-                sleep(1)
-                print("work item end")
-            }
+//        self.ivFilm.k_setImageWithUrl(url: url,placeHolder: UIImage(named: "imgPlaceHolder"),showLoading: true)
+//        self.ivFilm.k_cancelImageLoading()
 
-            let dg = DispatchGroup()
-            //submiy work items to the group
-            let dispatchQueue = DispatchQueue(label: "custom dq")
-            dispatchQueue.async(group: dg) {
-                print("block start")
-                sleep(2)
-                print("block end")
-            }
-//            DispatchQueue.global().async(group: dg, execute: dispatchWorkItem) {
-//
-//            }
-            DispatchQueue.main.async(execute: dispatchWorkItem)
-            
-//            dg.wait(timeout: .now()+3)
-            
-            //print message when all blocks in the group finish
-//            dg.notify(queue: DispatchQueue.main) {
-////                print("dispatch group over")
-//                self?.ivFilm.image = UIImage(data: data)
-//            }
-        }
-        task.resume()
        }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

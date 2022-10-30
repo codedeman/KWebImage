@@ -32,8 +32,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "dowLoadImage(url:hander:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,40 +48,24 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62DED634-52E6-46DB-AEDE-D26B9ECD72B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KWebImage/KImageDowLoadManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "dowLoadImage(url:hander:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D3902D24-8779-4B6A-91F3-BB4FD676AA87 - 838bbff257e030a8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GDCExample.ImageDownloadManager.dowLoadImage(url: Foundation.URL, hander: (Swift.Optional&lt;__C.UIImage&gt;, Foundation.URL, Swift.Optional&lt;Foundation.IndexPath&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "GDCExample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/project/GDCExample/GDCExample/ImgeLoader/ImageDownloadManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "1624">
-               </Location>
-               <Location
-                  uuid = "D3902D24-8779-4B6A-91F3-BB4FD676AA87 - 41dca158f8e009b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;, Foundation.URL, Swift.Optional&lt;Foundation.IndexPath&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GDCExample.ImageDownloadManager.dowLoadImage(url: Foundation.URL, hander: (Swift.Optional&lt;__C.UIImage&gt;, Foundation.URL, Swift.Optional&lt;Foundation.IndexPath&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "GDCExample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kevin/project/GDCExample/GDCExample/ImgeLoader/ImageDownloadManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "192">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

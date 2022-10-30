@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3AFF43290E2C9200DC8B00 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF42290E2C9200DC8B00 /* ImageLoader.swift */; };
 		0A3AFF45290E5F6000DC8B00 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF44290E5F6000DC8B00 /* ImageDownloadManager.swift */; };
+		0A3AFF4F290E958500DC8B00 /* KWebImage.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF4E290E958500DC8B00 /* KWebImage.docc */; };
+		0A3AFF55290E958500DC8B00 /* KWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3AFF4B290E958500DC8B00 /* KWebImage.framework */; };
+		0A3AFF5C290E958500DC8B00 /* KWebImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF5B290E958500DC8B00 /* KWebImageTests.swift */; };
+		0A3AFF5D290E958500DC8B00 /* KWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3AFF4D290E958500DC8B00 /* KWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A3AFF60290E958500DC8B00 /* KWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3AFF4B290E958500DC8B00 /* KWebImage.framework */; };
+		0A3AFF61290E958500DC8B00 /* KWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3AFF4B290E958500DC8B00 /* KWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A3AFF6A290E95CE00DC8B00 /* KImageDowLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF69290E95CE00DC8B00 /* KImageDowLoadManager.swift */; };
+		0A3AFF6B290E961000DC8B00 /* KImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF42290E2C9200DC8B00 /* KImageLoader.swift */; };
+		0A3AFF6D290E96DE00DC8B00 /* KUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF6C290E96DE00DC8B00 /* KUIImageView.swift */; };
 		0A4B4D972906984400379DE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B4D962906984400379DE6 /* AppDelegate.swift */; };
 		0A4B4D992906984400379DE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B4D982906984400379DE6 /* SceneDelegate.swift */; };
 		0A4B4D9B2906984400379DE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B4D9A2906984400379DE6 /* ViewController.swift */; };
@@ -26,6 +34,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A3AFF56290E958500DC8B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A4B4D8B2906984300379DE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A3AFF4A290E958500DC8B00;
+			remoteInfo = KWebImage;
+		};
+		0A3AFF58290E958500DC8B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A4B4D8B2906984300379DE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A4B4D922906984400379DE6;
+			remoteInfo = GDCExample;
+		};
+		0A3AFF5E290E958500DC8B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A4B4D8B2906984300379DE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A3AFF4A290E958500DC8B00;
+			remoteInfo = KWebImage;
+		};
 		0A4B4DAA2906984400379DE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A4B4D8B2906984300379DE6 /* Project object */;
@@ -42,9 +71,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0A3AFF65290E958500DC8B00 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A3AFF61290E958500DC8B00 /* KWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0A3AFF42290E2C9200DC8B00 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		0A3AFF42290E2C9200DC8B00 /* KImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KImageLoader.swift; sourceTree = "<group>"; };
 		0A3AFF44290E5F6000DC8B00 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		0A3AFF4B290E958500DC8B00 /* KWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3AFF4D290E958500DC8B00 /* KWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWebImage.h; sourceTree = "<group>"; };
+		0A3AFF4E290E958500DC8B00 /* KWebImage.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KWebImage.docc; sourceTree = "<group>"; };
+		0A3AFF54290E958500DC8B00 /* KWebImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWebImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3AFF5B290E958500DC8B00 /* KWebImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWebImageTests.swift; sourceTree = "<group>"; };
+		0A3AFF69290E95CE00DC8B00 /* KImageDowLoadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KImageDowLoadManager.swift; sourceTree = "<group>"; };
+		0A3AFF6C290E96DE00DC8B00 /* KUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUIImageView.swift; sourceTree = "<group>"; };
 		0A4B4D932906984400379DE6 /* GDCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4B4D962906984400379DE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4B4D982906984400379DE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,11 +115,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A3AFF48290E958500DC8B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3AFF51290E958500DC8B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3AFF55290E958500DC8B00 /* KWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B4D902906984400379DE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0AA17806290D5C990034CED2 /* SDWebImage in Frameworks */,
+				0A3AFF60290E958500DC8B00 /* KWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +159,29 @@
 		0A3AFF41290E2C8100DC8B00 /* ImgeLoader */ = {
 			isa = PBXGroup;
 			children = (
-				0A3AFF42290E2C9200DC8B00 /* ImageLoader.swift */,
 				0A3AFF44290E5F6000DC8B00 /* ImageDownloadManager.swift */,
 			);
 			path = ImgeLoader;
+			sourceTree = "<group>";
+		};
+		0A3AFF4C290E958500DC8B00 /* KWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				0A3AFF42290E2C9200DC8B00 /* KImageLoader.swift */,
+				0A3AFF4D290E958500DC8B00 /* KWebImage.h */,
+				0A3AFF4E290E958500DC8B00 /* KWebImage.docc */,
+				0A3AFF69290E95CE00DC8B00 /* KImageDowLoadManager.swift */,
+				0A3AFF6C290E96DE00DC8B00 /* KUIImageView.swift */,
+			);
+			path = KWebImage;
+			sourceTree = "<group>";
+		};
+		0A3AFF5A290E958500DC8B00 /* KWebImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A3AFF5B290E958500DC8B00 /* KWebImageTests.swift */,
+			);
+			path = KWebImageTests;
 			sourceTree = "<group>";
 		};
 		0A4B4D8A2906984300379DE6 = {
@@ -105,6 +190,8 @@
 				0A4B4D952906984400379DE6 /* GDCExample */,
 				0A4B4DAC2906984400379DE6 /* GDCExampleTests */,
 				0A4B4DB62906984400379DE6 /* GDCExampleUITests */,
+				0A3AFF4C290E958500DC8B00 /* KWebImage */,
+				0A3AFF5A290E958500DC8B00 /* KWebImageTests */,
 				0A4B4D942906984400379DE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +202,8 @@
 				0A4B4D932906984400379DE6 /* GDCExample.app */,
 				0A4B4DA92906984400379DE6 /* GDCExampleTests.xctest */,
 				0A4B4DB32906984400379DE6 /* GDCExampleUITests.xctest */,
+				0A3AFF4B290E958500DC8B00 /* KWebImage.framework */,
+				0A3AFF54290E958500DC8B00 /* KWebImageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +270,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0A3AFF46290E958500DC8B00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3AFF5D290E958500DC8B00 /* KWebImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		0A3AFF4A290E958500DC8B00 /* KWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3AFF62290E958500DC8B00 /* Build configuration list for PBXNativeTarget "KWebImage" */;
+			buildPhases = (
+				0A3AFF46290E958500DC8B00 /* Headers */,
+				0A3AFF47290E958500DC8B00 /* Sources */,
+				0A3AFF48290E958500DC8B00 /* Frameworks */,
+				0A3AFF49290E958500DC8B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KWebImage;
+			productName = KWebImage;
+			productReference = 0A3AFF4B290E958500DC8B00 /* KWebImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0A3AFF53290E958500DC8B00 /* KWebImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3AFF66290E958500DC8B00 /* Build configuration list for PBXNativeTarget "KWebImageTests" */;
+			buildPhases = (
+				0A3AFF50290E958500DC8B00 /* Sources */,
+				0A3AFF51290E958500DC8B00 /* Frameworks */,
+				0A3AFF52290E958500DC8B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A3AFF57290E958500DC8B00 /* PBXTargetDependency */,
+				0A3AFF59290E958500DC8B00 /* PBXTargetDependency */,
+			);
+			name = KWebImageTests;
+			productName = KWebImageTests;
+			productReference = 0A3AFF54290E958500DC8B00 /* KWebImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0A4B4D922906984400379DE6 /* GDCExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4B4DBD2906984400379DE6 /* Build configuration list for PBXNativeTarget "GDCExample" */;
@@ -189,10 +326,12 @@
 				0A4B4D8F2906984400379DE6 /* Sources */,
 				0A4B4D902906984400379DE6 /* Frameworks */,
 				0A4B4D912906984400379DE6 /* Resources */,
+				0A3AFF65290E958500DC8B00 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A3AFF5F290E958500DC8B00 /* PBXTargetDependency */,
 			);
 			name = GDCExample;
 			packageProductDependencies = (
@@ -248,6 +387,13 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					0A3AFF4A290E958500DC8B00 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					0A3AFF53290E958500DC8B00 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 0A4B4D922906984400379DE6;
+					};
 					0A4B4D922906984400379DE6 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -280,11 +426,27 @@
 				0A4B4D922906984400379DE6 /* GDCExample */,
 				0A4B4DA82906984400379DE6 /* GDCExampleTests */,
 				0A4B4DB22906984400379DE6 /* GDCExampleUITests */,
+				0A3AFF4A290E958500DC8B00 /* KWebImage */,
+				0A3AFF53290E958500DC8B00 /* KWebImageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A3AFF49290E958500DC8B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3AFF52290E958500DC8B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B4D912906984400379DE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,11 +475,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A3AFF47290E958500DC8B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3AFF6A290E95CE00DC8B00 /* KImageDowLoadManager.swift in Sources */,
+				0A3AFF6D290E96DE00DC8B00 /* KUIImageView.swift in Sources */,
+				0A3AFF4F290E958500DC8B00 /* KWebImage.docc in Sources */,
+				0A3AFF6B290E961000DC8B00 /* KImageLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3AFF50290E958500DC8B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3AFF5C290E958500DC8B00 /* KWebImageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B4D8F2906984400379DE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3AFF43290E2C9200DC8B00 /* ImageLoader.swift in Sources */,
 				0A4B4D9B2906984400379DE6 /* ViewController.swift in Sources */,
 				0A4B4D972906984400379DE6 /* AppDelegate.swift in Sources */,
 				0A3AFF45290E5F6000DC8B00 /* ImageDownloadManager.swift in Sources */,
@@ -348,6 +528,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A3AFF57290E958500DC8B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A3AFF4A290E958500DC8B00 /* KWebImage */;
+			targetProxy = 0A3AFF56290E958500DC8B00 /* PBXContainerItemProxy */;
+		};
+		0A3AFF59290E958500DC8B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A4B4D922906984400379DE6 /* GDCExample */;
+			targetProxy = 0A3AFF58290E958500DC8B00 /* PBXContainerItemProxy */;
+		};
+		0A3AFF5F290E958500DC8B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A3AFF4A290E958500DC8B00 /* KWebImage */;
+			targetProxy = 0A3AFF5E290E958500DC8B00 /* PBXContainerItemProxy */;
+		};
 		0A4B4DAB2906984400379DE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0A4B4D922906984400379DE6 /* GDCExample */;
@@ -380,6 +575,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A3AFF63290E958500DC8B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.KWebImage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A3AFF64290E958500DC8B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.KWebImage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A3AFF67290E958500DC8B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.KWebImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDCExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GDCExample";
+			};
+			name = Debug;
+		};
+		0A3AFF68290E958500DC8B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.KWebImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDCExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GDCExample";
+			};
+			name = Release;
+		};
 		0A4B4DBB2906984400379DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,6 +788,7 @@
 		0A4B4DBE2906984400379DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +817,7 @@
 		0A4B4DBF2906984400379DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -629,6 +922,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A3AFF62290E958500DC8B00 /* Build configuration list for PBXNativeTarget "KWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3AFF63290E958500DC8B00 /* Debug */,
+				0A3AFF64290E958500DC8B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3AFF66290E958500DC8B00 /* Build configuration list for PBXNativeTarget "KWebImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3AFF67290E958500DC8B00 /* Debug */,
+				0A3AFF68290E958500DC8B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0A4B4D8E2906984300379DE6 /* Build configuration list for PBXProject "GDCExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
