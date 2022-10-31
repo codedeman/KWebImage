@@ -10,7 +10,7 @@ import UIKit
 
 typealias ImageDownloadHandler = (_ image: UIImage?, _ url: URL, _ indexPath: IndexPath?, _ error: Error?) -> Void
 
-final class PGOperation: Operation {
+final class KOperation: Operation {
     
     var downloadHandler: ImageDownloadHandler?
     var imageUrl: URL!

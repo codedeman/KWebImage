@@ -1,0 +1,11 @@
+framework module KWebImage {
+  umbrella header "KWebImage.h"
+
+  export *
+  module * { export * }
+}
+
+module KWebImage.Swift {
+  header "KWebImage-Swift.h"
+  requires objc
+}
