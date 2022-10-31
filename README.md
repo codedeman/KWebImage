@@ -6,6 +6,8 @@ This libary provides dowloading image and caching images when from the web
 - [x] An asynchronous image downloader
 - [x] Resizing Image 
 - [x] Show process when image loading 
+- [x] Crop the image 
+
 ## Requirements
 
 

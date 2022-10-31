@@ -24,7 +24,9 @@ extension UIImageView {
                 indicator.stopAnimating()
             }
             if error != nil {
-                self.image = placeHolder
+                DispatchQueue.main.async {
+                    self.image = placeHolder
+                }
             } else {
                 DispatchQueue.main.async {
                     if let resize = resize  {

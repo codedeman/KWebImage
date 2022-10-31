@@ -6,6 +6,20 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0A3AFF6E290FDBF700DC8B00 /* KWebImageScript */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A3AFF6F290FDBF700DC8B00 /* Build configuration list for PBXAggregateTarget "KWebImageScript" */;
+			buildPhases = (
+				0A3AFF72290FDC1100DC8B00 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = KWebImageScript;
+			productName = KWebImageScript;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0A3AFF45290E5F6000DC8B00 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF44290E5F6000DC8B00 /* ImageDownloadManager.swift */; };
 		0A3AFF4F290E958500DC8B00 /* KWebImage.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AFF4E290E958500DC8B00 /* KWebImage.docc */; };
@@ -394,6 +408,9 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 0A4B4D922906984400379DE6;
 					};
+					0A3AFF6E290FDBF700DC8B00 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 					0A4B4D922906984400379DE6 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -428,6 +445,7 @@
 				0A4B4DB22906984400379DE6 /* GDCExampleUITests */,
 				0A3AFF4A290E958500DC8B00 /* KWebImage */,
 				0A3AFF53290E958500DC8B00 /* KWebImageTests */,
+				0A3AFF6E290FDBF700DC8B00 /* KWebImageScript */,
 			);
 		};
 /* End PBXProject section */
@@ -473,6 +491,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3AFF72290FDC1100DC8B00 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nSCHEME_NAME=\"KWebImage\"\nFRAMEWORK_NAME=\"KWebImage\"\nDEVICE_ARCHIVE_PATH=\"../output/KWebImage.xcarchive\"\n\nxcodebuild archive \\\n-scheme ${SCHEME_NAME} \\\n-destination \"generic/platform=iOS\" \\\n-archivePath ${DEVICE_ARCHIVE_PATH} \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARY_FOR_DISTRIBUTION=YES\nxcodebuild -create-xcframework \\\n-framework ${DEVICE_ARCHIVE_PATH}/Products/Library/Frameworks/KWebImage.framework \\\n-output ./xcframework/KWebImage.xcframework\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A3AFF47290E958500DC8B00 /* Sources */ = {
@@ -668,6 +706,24 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDCExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GDCExample";
+			};
+			name = Release;
+		};
+		0A3AFF70290FDBF700DC8B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A3AFF71290FDBF700DC8B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -936,6 +992,15 @@
 			buildConfigurations = (
 				0A3AFF67290E958500DC8B00 /* Debug */,
 				0A3AFF68290E958500DC8B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3AFF6F290FDBF700DC8B00 /* Build configuration list for PBXAggregateTarget "KWebImageScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3AFF70290FDBF700DC8B00 /* Debug */,
+				0A3AFF71290FDBF700DC8B00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

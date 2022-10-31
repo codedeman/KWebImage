@@ -36,8 +36,15 @@ class ViewController: UIViewController {
         
         guard let url = URL(string:  "https://media-api.advertisingvietnam.com/oapi/v1/media?uuid=public%2Fwp-content%2Fuploads%2F2020%2F02%2Fstarbuck-that-bai-tai-viet-nam-thumbal.jpg&resolution=1440x756&type=image" ) else { return  }
         
-        self.ivData.k_setImageWithUrl(url: url,placeHolder: UIImage(named: "imgPlaceHolder"),showLoading: true,resize: CGSize(width: 100, height: 200))
-        self.ivData.k_pausingImageLoading()
+        self.ivData.k_setImageWithUrl(url: url,placeHolder: UIImage(named: "imgPlaceHolder"),showLoading: true,resize: CGSize(width: 50, height: 50))
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            self.ivData.k_cancelImageLoading()
+        }
+        guard let url2 = URL(string: "https://iscale.iheart.com/v3/surl/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA1LzMyNy9NSTAwMDUzMjc3NTkuanBn?sn=eGtleWJhc2UyMDIxMTExMDrXsyIrKBG7HIAJ5quoktUSiMvZMLZMNQey0BB1dSqT0A%3D%3D&surrogate=1cOXl179JY-syhxYSCX6Q1a_Mcu6UO8d-F4oJzpZf1hcUbJr4aIgxNUIAQHp1k9NZfVmzdK5ntDaEMk1JfHht1k_Hu6xiEKA1RK2-952TOdpTPTZKKhM8B78aqq5YHWFU7IYVd41Qh6pGuK7GXK7NJrz3yPLlBmimgqRduLUdSF9-s4z-a-kB4DZgLT3uy2fw2lMaKF7zCZRu2U6wBQbPsUw") else {return}
+
+        DispatchQueue.main.asyncAfter(deadline: .now()+5) {
+            self.ivData.k_setImageWithUrl(url: url2,showLoading: true)
+        }
 
     }
 

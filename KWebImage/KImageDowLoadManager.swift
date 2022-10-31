@@ -11,7 +11,7 @@ import UIKit
 
 final class ImageDownloadManager {
     private var completionHandler: ImageDownloadHandler?
-    var operation: PGOperation!
+    var operation: KOperation!
     let imageCache = NSCache<NSString, UIImage>()
     static var shared = ImageDownloadManager()
     private init() {}
@@ -29,7 +29,9 @@ final class ImageDownloadManager {
             print("Return cached image for \(url)")
             self.completionHandler?(cachedImage, url, nil, nil)
         } else {
-            operation = PGOperation(url: url, indexPath: nil)
+            operation = KOperation(url: url, indexPath: nil)
+            
+//            if operation.isExecutin
             operation.downloadHandler = { (image, url, indexPath, error) in
                 if let newImage = image {
                     self.imageCache.setObject(newImage, forKey: url.absoluteString as NSString)
